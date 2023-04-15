@@ -7,7 +7,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './assets/main.css'
 
 Vue.use(ElementUI)
-Vue.use(AxiosPlugin, { baseURL: 'http://localhost:8080' })
+Vue.use(AxiosPlugin, { baseURL: '/api' })
 
 new Vue({
   render: (h) => h(App)

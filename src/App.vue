@@ -9,7 +9,7 @@ export default {
     data() {
         return {
             input: '',
-            uploadUrl: "http://localhost:8080/hello",
+            uploadUrl: "/hello",
         }
     },
     methods: {
@@ -37,12 +37,12 @@ export default {
 <template>
     <div id="app" class="indexBack">
         <div class="left_top">
-
+            
         </div>
         <el-upload
             class="upload-demo"
             ref="upload"
-            :action=uploadUrl
+            :action="uploadUrl"
             :on-preview="handlePreview"
             :on-remove="handleRemove"
             :auto-upload="false">
